@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kredi Kartı Formu</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Ödeme Yap</h1>
+        </div>
+        <hr>
+        <div class="kredi-karti">
+            <form action="">
+                <div class="isim-soyisim2">
+                    <label for="isim-soyisim">İsim Soyisim:</label>
+                    <br>
+                    <input type="text" id="isim-soyisim" pattern="[A-Z]{2,48} [A-Z]{2,64}" placeholder="örn: AHMET ERDEM" title="Küçük harf girmek yasaktır. Lütfen kartın üzerinde yazdığı gibi giriniz..." required>
+                </div>
+                <br>
+                <div class="kart-numarasi2">
+                    <label for="kart-numarasi">Kart Numarası:</label>
+                    <br>
+                    <input type="text" id="kart-numarasi" pattern="[0-9]{4}[-]{1}[0-9]{4}[-]{1}[0-9]{4}[-]{1}[0-9]{4}" placeholder="örn: 1234-5678-9012-3456" title="Örnek'te de gösterildiği gibi her 4 rakam'dan sonra arada ortadan tire '-' işaretinin olması zorunludur.">
+                </div>
+                <br>
+                <div class="ay-tarih2">
+                    <label for="ay-tarih">Ay:</label>
+                    <br>
+                    <select id="ay-tarih">
+                        <option value="01">Ocak</option>
+                        <option value="02">Şubat</option>
+                        <option value="03">Mart</option>
+                        <option value="04">Nisan</option>
+                        <option value="05">Mayıs</option>
+                        <option value="06">Haziran</option>
+                        <option value="07">Temmuz</option>
+                        <option value="08">Ağustos</option>
+                        <option value="09">Eylül</option>
+                        <option value="10">Ekim</option>
+                        <option value="11">Kasım</option>
+                        <option value="12">Aralık</option>
+                    </select>
+                </div>
+                <br>
+                <div class="yil-tarih2">
+                    <label for="yil-tarih">Yıl:</label>
+                    <br>
+                    <select id="yil-tarih">
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                    </select>
+                </div>
+                <br>
+                <div class="guvenlik-kodu2">
+                    <label for="guvenlik-kodu">Güvenlik Kodu:</label>
+                    <br>
+                    <input type="text" id="guvenlik-kodu" pattern="[0-9]{3}" placeholder="örn: 123" title="Kartınızın arkasındaki 3 haneli güvenlik kodunuzu giriniz.">
+                </div>
+                <br>
+                <div class="button">
+                    <button type="submit">Ödeme Yap</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
