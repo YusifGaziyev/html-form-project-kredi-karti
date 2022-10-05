@@ -23,7 +23,7 @@
                 <div class="kart-numarasi2">
                     <label for="kart-numarasi">Kart Numarası:</label>
                     <br>
-                    <input type="text" id="kart-numarasi" pattern="[0-9]{4}[-]{1}[0-9]{4}[-]{1}[0-9]{4}[-]{1}[0-9]{4}" placeholder="örn: 1234-5678-9012-3456" title="Örnek'te de gösterildiği gibi her 4 rakam'dan sonra arada ortadan tire '-' işaretinin olması zorunludur.">
+                    <input type="text" id="kart-numarasi" pattern="[0-9]{4}[-]{1}[0-9]{4}[-]{1}[0-9]{4}[-]{1}[0-9]{4}" placeholder="örn: 1234-5678-9012-3456" title="Örnek'te de gösterildiği gibi her 4 rakam'dan sonra arada ortadan tire '-' işaretinin olması zorunludur." required>
                 </div>
                 <br>
                 <div class="ay-tarih2">
@@ -63,7 +63,12 @@
                 <div class="guvenlik-kodu2">
                     <label for="guvenlik-kodu">Güvenlik Kodu:</label>
                     <br>
-                    <input type="text" id="guvenlik-kodu" pattern="[0-9]{3}" placeholder="örn: 123" title="Kartınızın arkasındaki 3 haneli güvenlik kodunuzu giriniz.">
+                    <input type="text" id="guvenlik-kodu" pattern="[0-9]{3}" placeholder="örn: 123" title="Kartınızın arkasındaki 3 haneli güvenlik kodunuzu giriniz." required>
+                </div>
+                <br>
+                <div class="dogrulama2">
+                    <input type="checkbox" id="dogrulama">
+                    <label for="dogrulama">Kredi kartı bilgilerimin doğruluğunu onaylıyorum.</label>
                 </div>
                 <br>
                 <div class="button">
